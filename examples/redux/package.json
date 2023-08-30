@@ -7,7 +7,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "babel-node ./"
+    "start": "babel-node ./",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "babel-cli": "^6.18.0",
@@ -16,6 +18,8 @@
     "github": "^7.1.0",
     "inquirer": "^2.0.0",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.1.0"
-  }
+    "redux-thunk": "^2.1.0",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
